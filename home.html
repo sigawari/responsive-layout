@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sikah's Website</title>
+        <link rel="stylesheet" href="style.css">     
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+
+    <body>
+        <header class="header">
+            <a href="#" class="logo">Siga</a>
+            <nav class="navbar">
+                <a href="#home" >Home</a>
+                <a href="#about">About</a>
+                <a href="#organizations">Organizations</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+
+        <main>
+        <section class="home" id="home">
+            <div class="home-content">
+                <h2>Halo! Saya Sikah</h2>
+                <h3>Front End baru belajar</h3>
+                <p>Saya merupakan mahasiswa Program Studi Teknik Informatika ITERA yang saat ini telah menginjak semester 5 dan sedang belajar Pemrograman Web</p>
+            </div>
+
+            <div class="home-socialmedia">
+                <a href="https://www.instagram.com/sikahn_/"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="https://github.com/sigawari"><i class='bx bxl-github'></i></a>
+                <a href="https://id.linkedin.com/in/sikah-nubuahtul"><i class='bx bxl-linkedin-square'></i></a>
+            </div>
+
+            <span class="home-imgHover"></span>
+        </section>
+
+        <section class="about" id="about">
+            <div class="about-content">
+                <h2>Tentang Saya</h2>
+                <p>Mahasiswa Program Studi Teknik Informatika di Institut Teknologi Sumatera yang memiliki semangat tinggi
+                    dalam mencari pengalaman, belajar, dan mengasah kemampuan. Memiliki latar belakang di bidang media dan
+                    IT, sangat tertarik dengan keikutsertaan dalam organisasi dan kepanitiaan.
+                </p>
+                <p>Saya sangat menyukai tantangan dan selalu berusaha untuk terus berkembang di dunia teknologi. Saya aktif 
+                   dalam kegiatan ekstrakurikuler, sering terlibat dalam pengembangan aplikasi web, serta suka mengeksplorasi 
+                   konsep-konsep baru dalam pemrograman. Di luar akademik, saya memiliki minat di bidang fotografi dan videografi.
+                </p>
+                <p>Di masa depan, saya berharap bisa berkontribusi dalam proyek-proyek teknologi yang berdampak pada masyarakat 
+                   luas, serta mengembangkan karir sebagai developer yang mampu memberikan solusi inovatif.
+                </p>
+            </div>
+        </section>
+        
+
+        <section class="organizations" id="organizations">
+            <h2>Pengalaman Organisasi</h2>
+                <ul>
+                    <li>
+                        <strong>Humas ITERA Divisi ITERA-TV</strong>
+                        <p>Sebagai anggota divisi ITERA-TV, saya terlibat dalam pembuatan konten video untuk berbagai acara kampus.</p>
+                    </li>
+                    <li>
+                        <strong>HMIF ITERA Divisi Technopreneur</strong>
+                        <p>Di divisi Technopreneur, saya belajar mengembangkan ide bisnis berbasis teknologi dan berpartisipasi dalam berbagai kompetisi.</p>
+                    </li>
+                    <li>
+                        <strong>Informatics Festival</strong>
+                        <p>2024</p>
+                    </li>
+                    <li>
+                        <strong>AKSATA Anucara</strong>
+                        <p>Sebagai Staf Media AKSATA Anucara, saya bertugas untuk mendokumentasikan dan mempromosikan kegiatan pemilahan sampah</p>
+                    </li>
+                </ul>
+        </section>
+
+        <section class="contact" id="contact">
+            <form action="home.html" method="post" id="contact">
+                <h2>Kontak Saya</h2>
+
+                <label>Nama Kamu
+                <input type="text" name="nama" placeholder="Nama lengkap">
+                </label> <br> <br>
+    
+                <label>Email
+                    <input type="email" name="email" placeholder="email biar dihubungi">
+                </label> <br> <br>
+    
+                <label>Pesan Untukku <br>
+                    <textarea name="comments" placeholder="Cth: Kah, udah makan?"></textarea>
+                </label> <br> <br>
+                
+                <input type="submit" id="submit" value="Kirim">
+    
+            </fieldset>
+            </form>
+        </section>
+        </main>
+
+        <footer>
+            <p>&copy; Sikah Nubuahtul Ilmi</p>
+        </footer>
+    </body>
+</html>
+
+<script>
+    let form = document.getElementsByTagName("form")[0];
+    form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        alert("Terima kasih");
+        form.reset();
+    });
+</script>
